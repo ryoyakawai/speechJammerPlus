@@ -1,102 +1,7 @@
 <html>
   <head>
     <title>SppechJammer+ App</title>
-    <style type="text/css">
-    body {
-      background-image: url(images/body-bg.jpg);
-      padding-top: 20px;
-      padding-bottom: 60px;
-    }
-
-    .tShadow{text-shadow: 0px 0px 8px #a0a0a0;}
-    .flipImage{
-      -webkit-transform: scaleX(-1);
-      filter: FlipH;
-    }
-
-    #div_delayImage{ border-style: none; width: 400; height:300; position:relative; }
-    #delayImage{ border: 1px solid #a0a0a0; border-radius: 8px; }
-    .jamArea{ width: 600; border: 1px solid #a0a0a0; padding: 20px; border-radius: 5px; margin:0 auto; -webkit-box-shadow: 0px 0px 8px #303030; background-color:#ffffff; }
-    .appUiHr { margin: 20px 0px 5px 0px; color: #a0a0a0; clear:both; }
-    .jamButton { float:right; }
-    .captureImageArea{ padding-left:100; }
-
-    .showBorder{border: 1px solid #a0a0a0; width:300;}
-
-    .div_labelEffect{margin:10 0 0 20; float:left; width: 320;}
-    .labelVolume{ float:left; width:130;}
-    .volumeKnob{ margin-left: 14; }
-    .labelDelay{ float:left; width:130;}
-    .delayKnob{ margin-left: 23;}
-
-    .changeEffect{ margin:15 0 0 18; }
-    .div_changeEffect{ padding-top: 10;}
-
-    /* Custom container */
-    .container {
-      margin: 0 auto;
-      max-width: 1000px;
-    }
-    .container > hr {
-      margin: 60px 0;
-    }
-
-    /* Main marketing message and sign up button */
-    .jumbotron {
-      margin: 80px 0;
-      text-align: center;
-    }
-    .jumbotron h1 {
-      font-size: 100px;
-      line-height: 1;
-    }
-    .jumbotron .lead {
-      font-size: 24px;
-      line-height: 1.25;
-    }
-    .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-    }
-
-    /* Supporting marketing content */
-    .marketing {
-      margin: 60px 0;
-    }
-    .marketing p + h4 {
-      margin-top: 28px;
-    }
-
-
-    /* Customize the navbar links to be fill the entire space of the .navbar */
-    .navbar .navbar-inner {
-      padding: 0;
-    }
-    .navbar .nav {
-      margin: 0;
-      display: table;
-      width: 100%;
-    }
-    .navbar .nav li {
-      display: table-cell;
-      width: 1%;
-      float: none;
-    }
-    .navbar .nav li a {
-      font-weight: bold;
-      text-align: center;
-      border-left: 1px solid rgba(255,255,255,.75);
-      border-right: 1px solid rgba(0,0,0,.1);
-    }
-    .navbar .nav li:first-child a {
-      border-left: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    .navbar .nav li:last-child a {
-      border-right: 0;
-      border-radius: 0 3px 3px 0;
-    }
-    </style>
+    <link href="./css/speechJammerPlus.css" rel="stylesheet">
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
@@ -115,9 +20,10 @@
       <br>
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Leave me alone?</h1>
-        <p class="lead">The basic idea of this application is SpeechJammer, which won Ig Novel Acoustics Prize in 2012, and this application is added video palyback and audio effect feature. I believe that this application is not only jamming comversation, but also provide you some laugh!!</p>
-        <a class="btn btn-large btn-success" href="#appArea">Try SpeechJammer+ App!!</a>
+        <h1>SpeechJammer+</h1> 
+        <h2>Disturb your talk? No, it is FUN!!</h2>
+        <p class="lead">The basic idea of this application is SpeechJammer, which won Ig Novel Acoustics Prize in 2012. And, now SpeechJammer gets video palyback and sound effect feature.<br> I believe "SpeechJammer+" is not only an application to disturb people from talking, but also provide you some fun experiences!!</p>
+        <a class="btn btn-large btn-success" href="#appArea">Try SpeechJammer+ !!</a>
       </div>
       <br>
       <br>
@@ -128,14 +34,40 @@
 
       <a id="appArea"></a>
       <div class="masthead">
-        <h3 class="muted tShadow">SpeechJammer+ App</h3>
+        <h3 class="muted tShadow">SpeechJammer+</h3>
       </div>
       <br>
+
+						<div id="right">
+								<div id="social_button">
+										<div id="tw-root">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://goo.gl/yCJvX" data-text="HAVE FUN!! &quot;SpeechJammer+&quot; Web App -" data-hashtags="webaudio">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+										</div>
+										<div id="gl-root">
+												<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+												<g:plusone size="medium"></g:plusone>
+										</div>
+										<div id="hb-root">
+												<a id="hb_like" href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+														<img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+												</a>
+												<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+												<script type="text/javascript">document.getElementById("hb_like").href="http://b.hatena.ne.jp/entry/"+location.href</script>
+										</div>
+										<div id="fb-root1">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F695740%2FspeechJammerPlus%2Findex.html&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+										</div>
+										<div id="tw-root" style="padding-left:30px;">
+												<a href="https://twitter.com/ryoyakawai" class="twitter-follow-button" data-show-count="false">Follow @ryoyakawai</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+										</div>
+								</div>
+						</div>
+      <br>
+      <br>
+
       <div class="jamArea" id="jamArea">
-
-        <!--<span>Volume: <input style="visibility:hidden;" type="range" id="volume" min="0" max="1" step="0.1" value="0.7"></span>-->
-        <!--<span>Delay: <input style="visibility:hidden;" type="range" id="delay" min="0" max="1" step="0.1" value="0.2"></span>-->
-
         <div class="div_labelEffect">
           <i class="icon-fire"></i><strong>Sound Effect: </strong><br>
           <div class="div_changeEffect"><span id="changeEffect" class="changeEffect"></span></div>
@@ -156,7 +88,7 @@
 
           <div id="div_delayImage" ><img id="delayImage" class="flipImage"></div>
           <br>
-          
+
           <canvas id="analyserCanvas"></canvas>
         </div>
 
@@ -166,14 +98,15 @@
         <hr class="appUiHr">
         <div class="jamButton">
           <input class="btn btn-primary" type="button" id="toggleStartButton" name="on" value="Jamming On">
-
-          <!input class="btn btn-primary" type="button" id="startjamming" value="Jamming On">
-          <!input class="btn btn-danger" type="button" id="stopjamming" value="Jamming Off">
         </div>
         <br>
 
       </div><!-- /.appArea -->
+
+				  <a href="https://github.com/ryoyakawai/speechJammerPlus/" target="_new" class="header" style="position: absolute; z-index:2; top: 0; right: 0; border: 0;"><img src="images/forkme.png" alt="Fork me on GitHub"></a>
+
     </div><!-- /.container -->
+
 
 
     <script type="text/javascript" src="js/waveshaper.js"></script>
@@ -184,18 +117,16 @@
     <link rel="import" href="webcomponents/knob.html">
 
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-31901806-1']);
-      _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31901806-1']);
+    _gaq.push(['_trackPageview']);
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-
-				<a href="https://github.com/ryoyakawai/speechJammerPlus/" target="_new" class="header" style="position: absolute; z-index:2; top: 0; right: 0; border: 0;"><img src="images/forkme.png" alt="Fork me on GitHub"></a>
 
   </body>
 </html>
